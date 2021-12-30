@@ -1,0 +1,589 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Account Trading</title>
+
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="assets/css/sweetalert2.min.css">
+  <link rel="stylesheet" href="assets/css/style-starter.css">
+  <link rel="stylesheet" href="../globals/global.css">
+<!-- sweetalert2.min -->
+  <!-- google fonts -->
+  <link href="//fonts.googleapis.com/css?family=Nunito:300,400,600,700,800,900&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+
+  <style>
+    .thatwhat {
+  z-index: 99999;
+  position: fixed;
+  bottom: 0px;
+  right: 80px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.thatwhat img {
+    height: 60px;
+    width: 60px;
+}
+  </style>
+
+</head>
+
+<body class="sidebar-menu-collapsed">
+  <div class="se-pre-con"></div>
+<section>
+  <!-- sidebar menu start -->
+  <div class="sidebar-menu sticky-sidebar-menu">
+
+    <!-- logo start -->
+    <div class="logo">
+      <h1><a href="./"> Trading</a></h1>
+    </div>
+
+  <!-- if logo is image enable this --> 
+    <!-- <div class="logo">
+      <a href="./">
+        <img src="../images/logo.png" alt="logog" title="Your logo" class="img-fluid" style="height:35px;" />
+      </a>
+    </div> -->
+
+    <div class="logo-icon text-center">
+      <a href="./" title="Dashboard"><img src="assets/images/logo.png" alt="logo-icon"> </a>
+    </div>
+    <!-- //logo end -->
+
+    <div class="sidebar-menu-inner">
+
+      <!-- sidebar nav start -->
+      <ul class="nav nav-pills nav-stacked custom-nav">
+        <li class="active"><a href="./"><i class="fa fa-tachometer"></i><span>Trading</span></a>
+        </li>
+        <li class="menu-list">
+          <a href="#"><i class="fa fa-money"></i>
+            <span>Account <i class="lnr lnr-chevron-right"></i></span></a>
+          <ul class="sub-menu-list">
+            <li><a href="deposit.html">Deposit Fund</a> </li>
+            <li><a href="withdraw.html">Withdraw Fund</a></li>
+      
+            <!-- <li><a href="upgrade.html"> Upgrade Account</a></li> -->
+          </ul>
+        </li>
+         <li class="menu-list">
+          <a href="#"><i class="fa fa-life-ring"></i>
+            <span>Setting <i class="lnr lnr-chevron-right"></i></span></a>
+          <ul class="sub-menu-list">
+            <li><a href="personal.html">Personal</a> </li>
+            <li><a href="security.html">Security</a></li>
+          </ul>
+        </li>
+        <li><a href="plans.html"><i class="fa fa-star"></i> <span>Plans</span></a></li>
+        <li><a href="history.html"><i class="fa fa-history"></i> <span>Transaction History</span></a></li>
+        <li><a href="https://play.google.com/store/apps/details?id=piuk.blockchain.android"><i class="fa fa-android"></i> <span>Download Bitcoin App</span></a></li>
+        <li><a href="https://itunes.apple.com/us/app/blockchain-bitcoin-wallet/id493253309?mt=8"><i class="fa fa-apple"></i> <span>Download Bitcoin App</span></a></li>
+        <li><a href="logout.html"><i class="fa fa-sign-out"></i> <span>Logout</span></a></li>
+      </ul>
+      <!-- //sidebar nav end -->
+      <!-- toggle button start -->
+      <a class="toggle-btn">
+        <i class="fa fa-angle-double-left menu-collapsed__left"><span>Close</span></i>
+        <i class="fa fa-angle-double-right menu-collapsed__right"></i>
+      </a>
+      <!-- //toggle button end -->
+    </div>
+  </div>
+  <!-- //sidebar menu end -->
+  <!-- header-starts -->
+  <div class="header sticky-header">
+
+    <!-- notification menu start -->
+    <div class="menu-right">
+      <div class="navbar user-panel-top">
+        <div class="user-dropdown-details d-flex">
+          <div class="profile_details_left">
+            <div class="">
+                <img src="../images/logo-light.png" alt="logo" title="Your logo" class="img-fluid" style="height:35px;" />
+            </div>
+          </div>
+          <div class="profile_details">
+            <ul>
+              <li class="dropdown profile_details_drop">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="dropdownMenu3" aria-haspopup="true"
+                  aria-expanded="false">
+                  <div class="profile_img">
+                    <img src="../images/person.jpg" class="rounded-circle" alt="" />
+                    <div class="user-active">
+                      <span></span>
+                    </div>
+                  </div>
+                </a>
+                <ul class="dropdown-menu drp-mnu" aria-labelledby="dropdownMenu3">
+                  <li class="user-info">
+                    <h5 class="user-name">rich</h5>
+                    
+                    <br>
+                    
+                                               
+                    </span>
+                  </li>
+                  <li> <a href="personal.html"><i class="lnr lnr-user"></i>My Profile</a> </li>
+                  <!-- <li> <a href="#"><i class="lnr lnr-users"></i>1k Followers</a> </li> -->
+                  <li> <a href="security.html"><i class="lnr lnr-cog"></i>Setting</a> </li>
+                  <!-- <li> <a href="#"><i class="lnr lnr-heart"></i>100 Likes</a> </li> -->
+                  <li class="logout"> <a href="logout.html"><i class="fa fa-power-off"></i> Logout</a> </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--notification menu end -->
+  </div>
+  <!-- //header-ends -->
+
+<style>
+
+  @media(max-width: 560px){
+    .hide-md {
+          display:none;
+        }
+        
+  }
+
+  @media(max-width: 360px){
+        .mob-sta p{
+          font-size: 4vw;
+          text-align: left;
+          /* background: red; */
+        }
+  }
+
+      @media(min-width: 560px){
+        
+        .hide-sm{
+          display: none;
+        }
+      }
+
+</style>
+
+  <!-- main content start -->
+<div class="main-content">
+
+  <!-- content -->
+  <div class="container-fluid content-top-gap">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb my-breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html" class='text-warning'>Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Trading</li>
+      </ol>
+    </nav>
+    <div class="welcome-msg pt-3 pb-4">
+      <h1 class='text-white' >Hi <span class="text-warning"> man </span>, Welcome back</h1>
+      
+      
+      
+      <div class='hide-md mt-4'>
+          
+            <div class='alert alert-info alert-dismissible fade show' role='alert'>
+                
+            </div>      </div>
+    
+    </div>
+
+    <!-- statistics data -->
+    <div class="statistics hide-md">
+
+      <div class="row">
+        <div class="col-xl-6 pr-xl-2">
+          <div class="row">
+            <div class="col-sm-6 pr-sm-2 statistics-grid">
+              <div class="card card_border border-primary-top p-4">
+                <i class="fa fa-money"> </i>
+                <h3 class="text-success number">$
+                   0.00                   </h3>
+                <p class="stat-text"> Account Balance </p>
+              </div>
+            </div>
+            <div class="col-sm-6 pl-sm-2 statistics-grid">
+              <div class="card card_border border-primary-top p-4">
+                <i class="fa fa-money"> </i>
+                <h3 class="text-secondary number">
+                  $ 0.00  
+              </h3>
+                <p class="stat-text">Total Deposit</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6 pl-xl-2">
+          <div class="row">
+            <div class="col-sm-6 pr-sm-2 statistics-grid">
+              <div class="card card_border border-primary-top p-4">
+                <i class="fa fa-money"> </i>
+                <h3 class="text-success number">$ 
+                  0.00                    
+                </h3>
+                <p class="stat-text">Referral Bonus</p>
+              </div>
+            </div>
+            <div class="col-sm-6 pl-sm-2 statistics-grid">
+              <div class="card card_border border-primary-top p-4">
+                <i class="fa fa-money"> </i>
+                <h3 class="text-danger number"> 
+                  $ 0.00                </h3>
+                <p class="stat-text">Total Withdrew</p>
+              </div>
+            </div>
+          </div>
+        </div>
+         <div class="col-xl-6 pl-xl-2">
+          <div class="row">
+            <div class="col-sm-6 pr-sm-2 statistics-grid">
+              <div class="card card_border border-primary-top p-4">
+                <i class="fa fa-money"> </i>
+                <h3 class="text-success number">
+                  $ 0.00                
+                </h3>
+                <p class="stat-text">Pending Withdrawal</p>
+              </div>
+            </div>
+            <div class="col-sm-6 pl-sm-2 statistics-grid">
+              <div class="card card_border border-primary-top p-4">
+                <i class="fa fa-money"> </i>
+                <h3 class="text-danger number">
+                  $ .00                </h3>
+                <p class="stat-text">Last Withdrawal</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //statistics data -->
+
+
+    <!-- mobile stastics start here -->
+    <div class="mob-sta  ">
+        <div class="statistics">
+          <div class="row justify-content-center hide-sm">
+              <div class="col-5 statistics-grid">
+                <div class="card card_border border-primary-top p-4">
+                  <p class="text-success number">
+                    $  0.00                    </p>
+                  <p class="stat-text">  Balance </p>
+                </div>
+              </div>
+              <div class="col-5 statistics-grid hide-sm">
+                <div class="card card_border border-primary-top p-4">
+                  <p class="text-success number">$ 
+                    0.00                    
+                  </p>
+                  <!-- <p class="stat-text "> <strong>BTC</strong> <span class='btcConvert'>0.00</span> </p> -->
+                  <p class="stat-text">Deposit</p>
+                </div>
+              </div>
+          </div>
+          <div class="row justify-content-center hide-sm">
+              <div class="col-10 statistics-grid hide-sm">
+                <div class="card card_border border-primary-top p-4">
+                  <p class="text-success number">$ 
+                    0.00                    
+                  </p>
+                  <!-- <p class="stat-text "> <strong>BTC</strong> <span class='btcConvert'>0.00</span> </p> -->
+                  <p class="stat-text">Referrer Bonus</p>
+                </div>
+              </div>
+          </div>
+          
+        </div>
+  </div>
+
+    <!-- mobile sta ends here -->
+  
+
+    <!-- modals -->
+    <section class="template-cards ">
+      <div class="card card_border"> 
+        <div class="cards__heading p-3">
+          <p class='hide-md'>
+              <a class='btn btn-success btn-sm m-1' href='deposit.html'>Deposit Fund</a>
+              <a href="withdraw.html" class='btn btn-primary btn-sm m-1'>Withdraw Fund</a>
+             
+        </p>
+        </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-12 p-0">
+                            <div class = "last-widget">
+          <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container" >
+    <div class="tradingview-widget-container__widget"></div>
+    
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+    {
+    "symbols": [
+    {
+        "proName": "FX_IDC:EURUSD",
+        "title": "EUR/USD"
+    },
+    {
+        "proName": "BITSTAMP:BTCUSD",
+        "title": "BTC/USD"
+    },
+    {
+        "proName": "BITSTAMP:ETHUSD",
+        "title": "ETH/USD"
+    }
+    ],
+    "colorTheme": "dark",
+    "isTransparent": false,
+    "displayMode": "adaptive",
+    "locale": "en"
+}
+    </script>
+</div>
+<!-- TradingView Widget END -->       </div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-sm-9">
+              <!-- <div class="embed-responsive embed-responsive-4by3">
+                <iframe src="demo/index.html" frameborder="0" width="100%" style='overflow:hidden'></iframe>
+                </div> -->
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-sm-4 p-0 sm-hide">
+              <div class ="forex_src"> 
+                <!-- TradingView Widget BEGIN -->
+              <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+                  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
+                        {
+                        "width": "100%",
+                        "height": 600,
+                        "defaultColumn": "overview",
+                        "defaultScreen": "general",
+                        "market": "forex",
+                        "showToolbar": false,
+                        "colorTheme": "dark",
+                        "transparency": false,
+                        "locale": "en"
+                          }
+                </script>
+              </div>
+              <!-- TradingView Widget END -->
+
+              <!-- another starts -->
+              
+              <!-- another end -->
+            </div>
+            </div>
+            <div class="col-sm-8 p-0">
+              <div class="tradingview-widget-container" >
+                <div id="tradingview_eeb1c" style="min-height:600px !important; height:600px; width:100%"></div>
+
+                  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                  <script type="text/javascript">
+                  new TradingView.widget(
+                  {
+                    "autosize": true,
+                    "symbol": "OANDA:EURUSD",
+                    "interval": "1",
+                    "timezone": "Etc/UTC",
+                    "theme": "Dark",
+                    "style": "1",
+                    "locale": "en",
+                    "toolbar_bg": "#f1f3f6",
+                    "enable_publishing": false,
+                    "withdateranges": true,
+                    "hide_side_toolbar": false,
+                    "allow_symbol_change": true,
+                    "studies": [
+                      "BB@tv-basicstudies",
+                      "MASimple@tv-basicstudies",
+                      "RSI@tv-basicstudies"
+                    ],
+                    "container_id": "tradingview_eeb1c"
+                  }
+                  );
+                  </script>
+              </div>
+            </div>
+          </div>
+          <div class="row hide-sm mob-sta">
+            <div class="col-6 statistics-grid">
+              <div class="card card_border border-primary-top p-4">
+                <p class="text-success number">
+                  $ 0.00                
+                </p>
+                <p class="stat-text">Pending Withdrawal</p>
+              </div>
+            </div>
+            <div class="col-6 statistics-grid">
+              <div class="card card_border border-primary-top p-4">
+                <p class="text-danger number">$ 0.00</p>
+                <p class="stat-text">Last Withdrawal</p>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="row">
+            <div class="col-sm-12 p-0">
+              <div>
+                  <div class="tradingview-widget-container__widget"></div>
+
+                  <script
+                    type="text/javascript"
+                    src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js"
+                    async
+                  >
+                    {
+                    "width": "100%",
+                    "height": 512,
+                    "defaultColumn": "overview",
+                    "defaultScreen": "general",
+                    "market": "forex",
+                    "showToolbar": true,
+                    "colorTheme": "dark",
+                    "transparency": false,
+                    "locale": "en"
+                    }
+                  </script>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- //modals -->
+
+  </div>
+  <!-- //content -->
+</div>
+<!-- main content end-->
+</section>
+
+
+<p style='padding-bottom: 200px;'>
+
+</p>
+
+<button onclick="topFunction()" id="movetop" class="bg-primary" title="Go to top">
+  <span class="fa fa-angle-up"></span>
+</button>
+<script>
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () {
+    scrollFunction()
+  };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("movetop").style.display = "block";
+    } else {
+      document.getElementById("movetop").style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+<!-- /move top -->
+
+
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+<script src="assets/js/jquery-1.10.2.min.js"></script>
+
+<!-- chart js -->
+<script src="assets/js/Chart.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<!-- //chart js -->
+
+<!-- Different scripts of charts.  Ex.Barchart, Linechart -->
+<script src="assets/js/bar.js"></script>
+<script src="assets/js/linechart.js"></script>
+<!-- //Different scripts of charts.  Ex.Barchart, Linechart -->
+
+
+<script src="assets/js/jquery.nicescroll.js"></script>
+<script src="assets/js/scripts.js"></script>
+<script src="assets/js/sweetalert2.min.js"></script>
+<script src="assets/js/btcConverter.js"></script>
+
+<!-- close script -->
+<script>
+  var closebtns = document.getElementsByClassName("close-grid");
+  var i;
+
+  for (i = 0; i < closebtns.length; i++) {
+    closebtns[i].addEventListener("click", function () {
+      this.parentElement.style.display = 'none';
+    });
+  }
+</script>
+<!-- //close script -->
+
+<!-- disable body scroll when navbar is in active -->
+<script>
+  $(function () {
+    $('.sidebar-menu-collapsed').click(function () {
+      $('body').toggleClass('noscroll');
+    })
+  });
+</script>
+<!-- disable body scroll when navbar is in active -->
+
+ <!-- loading-gif Js -->
+ <script src="assets/js/modernizr.js"></script>
+ <script>
+     $(window).load(function () {
+         // Animate loader off screen
+         $(".se-pre-con").fadeOut("slow");;
+     });
+ </script>
+ <!--// loading-gif Js -->
+
+ 
+<!-- Bootstrap Core JavaScript -->
+<script src="assets/js/bootstrap.min.js"></script>
+
+
+           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+	<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="9b655de8-a4e0-4b7d-9d4d-28fabb438fbc";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+    <style>
+          .thatwhat{
+                    position: fixed;
+                    width: 60px;
+                    left: 5px ;
+                    bottom: 15px;
+                    z-index: 99999;
+          }
+
+          .thatwhat img{
+                    width: 100%;
+          }
+
+</style>
+
+<div class="thatwhat">
+        <a href="https://wa.me/14014263525" target="_blank">
+            <img src="../images/wtp.png">
+        </a>
+    </div></body>
+
+</html>
+  

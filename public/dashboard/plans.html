@@ -1,0 +1,416 @@
+
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Account Trading</title>
+
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="assets/css/sweetalert2.min.css">
+  <link rel="stylesheet" href="assets/css/style-starter.css">
+  <link rel="stylesheet" href="../globals/global.css">
+<!-- sweetalert2.min -->
+  <!-- google fonts -->
+  <link href="//fonts.googleapis.com/css?family=Nunito:300,400,600,700,800,900&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+
+  <style>
+    .thatwhat {
+  z-index: 99999;
+  position: fixed;
+  bottom: 0px;
+  right: 80px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.thatwhat img {
+    height: 60px;
+    width: 60px;
+}
+  </style>
+
+</head>
+
+<body class="sidebar-menu-collapsed">
+  <div class="se-pre-con"></div>
+<section>
+  <!-- sidebar menu start -->
+  <div class="sidebar-menu sticky-sidebar-menu">
+
+    <!-- logo start -->
+    <div class="logo">
+      <h1><a href="./"> Upgrade</a></h1>
+    </div>
+
+  <!-- if logo is image enable this --> 
+    <!-- <div class="logo">
+      <a href="./">
+        <img src="../images/logo.png" alt="logog" title="Your logo" class="img-fluid" style="height:35px;" />
+      </a>
+    </div> -->
+
+    <div class="logo-icon text-center">
+      <a href="./" title="Dashboard"><img src="assets/images/logo.png" alt="logo-icon"> </a>
+    </div>
+    <!-- //logo end -->
+
+    <div class="sidebar-menu-inner">
+
+      <!-- sidebar nav start -->
+      <ul class="nav nav-pills nav-stacked custom-nav">
+        <li class="active"><a href="./"><i class="fa fa-tachometer"></i><span>Trading</span></a>
+        </li>
+        <li class="menu-list">
+          <a href="#"><i class="fa fa-money"></i>
+            <span>Account <i class="lnr lnr-chevron-right"></i></span></a>
+          <ul class="sub-menu-list">
+            <li><a href="deposit.html">Deposit Fund</a> </li>
+            <li><a href="withdraw.html">Withdraw Fund</a></li>
+            
+            <!-- <li><a href="upgrade.html"> Upgrade Account</a></li> -->
+          </ul>
+        </li>
+         <li class="menu-list">
+          <a href="#"><i class="fa fa-life-ring"></i>
+            <span>Setting <i class="lnr lnr-chevron-right"></i></span></a>
+          <ul class="sub-menu-list">
+            <li><a href="personal.html">Personal</a> </li>
+            <li><a href="security.html">Security</a></li>
+          </ul>
+        </li>
+        <li><a href="plans.html"><i class="fa fa-star"></i> <span>Plans</span></a></li>
+        <li><a href="history.html"><i class="fa fa-history"></i> <span>Transaction History</span></a></li>
+        <li><a href="https://play.google.com/store/apps/details?id=piuk.blockchain.android"><i class="fa fa-android"></i> <span>Download Bitcoin App</span></a></li>
+        <li><a href="https://itunes.apple.com/us/app/blockchain-bitcoin-wallet/id493253309?mt=8"><i class="fa fa-apple"></i> <span>Download Bitcoin App</span></a></li>
+        <li><a href="logout.html"><i class="fa fa-sign-out"></i> <span>Logout</span></a></li>
+      </ul>
+      <!-- //sidebar nav end -->
+      <!-- toggle button start -->
+      <a class="toggle-btn">
+        <i class="fa fa-angle-double-left menu-collapsed__left"><span>Close</span></i>
+        <i class="fa fa-angle-double-right menu-collapsed__right"></i>
+      </a>
+      <!-- //toggle button end -->
+    </div>
+  </div>
+  <!-- //sidebar menu end -->
+  <!-- header-starts -->
+  <div class="header sticky-header">
+
+    <!-- notification menu start -->
+    <div class="menu-right">
+      <div class="navbar user-panel-top">
+        <div class="user-dropdown-details d-flex">
+          <div class="profile_details_left">
+            <div class="">
+                <img src="../images/logo-light.png" alt="logo" title="Your logo" class="img-fluid" style="height:35px;" />
+            </div>
+          </div>
+          <div class="profile_details">
+            <ul>
+              <li class="dropdown profile_details_drop">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="dropdownMenu3" aria-haspopup="true"
+                  aria-expanded="false">
+                  <div class="profile_img">
+                    <img src="../images/person.jpg" class="rounded-circle" alt="" />
+                    <div class="user-active">
+                      <span></span>
+                    </div>
+                  </div>
+                </a>
+                <ul class="dropdown-menu drp-mnu" aria-labelledby="dropdownMenu3">
+                  <li class="user-info">
+                    <h5 class="user-name">rich</h5>
+                    
+                    
+                                               
+                    </span>
+                  </li>
+                  <li> <a href="personal.html"><i class="lnr lnr-user"></i>My Profile</a> </li>
+                  <!-- <li> <a href="#"><i class="lnr lnr-users"></i>1k Followers</a> </li> -->
+                  <li> <a href="security.html"><i class="lnr lnr-cog"></i>Setting</a> </li>
+                  <!-- <li> <a href="#"><i class="lnr lnr-heart"></i>100 Likes</a> </li> -->
+                  <li class="logout"> <a href="logout.html"><i class="fa fa-power-off"></i> Logout</a> </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--notification menu end -->
+  </div>
+  <!-- //header-ends -->
+
+  <!-- //header-ends -->
+<!-- main content start -->
+<div class="main-content">
+
+    <!-- content -->
+    <div class="container-fluid content-top-gap">
+
+        <!-- breadcrumbs -->
+        <nav aria-label="breadcrumb" class="mb-4">
+            <ol class="breadcrumb my-breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html"class='text-warning'>Trading</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Upgrade Account</li>
+            </ol>
+        </nav>
+        <!-- //breadcrumbs -->
+        <!-- forms -->
+        <section class="forms">
+            <!-- forms 1 -->
+          <div class="welcome-msg pt-3 pb-4">
+                    <h1 class='text-white' >Hello <span class="text-warning"> man </span></h1>
+                    
+                    <p class='text-white'>Please select a package below to upgrade</p>
+          </div>
+          <div class="card card_border py-2 mb-4">
+                    <div class="cards__heading">
+                              <h3>Packages <span> </span></h3>           
+                    </div>
+                    <div class="row">
+                              <div class="col-sm">
+                                        <div class="card  bg-light m-3">
+                                          <!-- <img class="card-img-top" src="holder.js/100px180/" alt=""> -->
+                                          <div class="card-body ">
+                                            <div class="text-center">
+                                                  <h4 class="card-title">STARTER'S PLAN</h4>
+                                                  <h2 class="text-warning">25%</h2>
+                                                  <p class=" card-text p-2">Money Return</p>
+                                                  <p class=" card-text p-2">Minimum Deposit $1,000+</p>
+                                                  <p class=" card-text p-2">Enhanced security</p>
+                                                  <p class=" card-text p-2">Access to all features</p>
+                                                  <p class=" card-text p-2">24/7Support</p>
+                                                  <p class=" card-text p-2">
+                                                  <button type="button" name="STARTER'S PLAN" class="btn btn-primary  btn-block btn-upgrade">Request Upgrade</button>
+                                                  </p>
+                                            </div>
+                                          </div>
+                                        </div>
+                              </div>    
+                              <div class="col-sm">
+                                        <div class="card  bg-light m-3">
+                                          <!-- <img class="card-img-top" src="holder.js/100px180/" alt=""> -->
+                                          <div class="card-body ">
+                                            <div class="text-center">
+                                                  <h4 class="card-title">ADVANCED PLAN</h4>
+                                                  <h2 class="text-warning">35%</h2>
+                                                  <p class=" card-text p-2">Money Return</p>
+                                                  <p class=" card-text p-2">Minimum Deposit $5,000+</p>
+                                                  <p class=" card-text p-2">Enhanced security</p>
+                                                  <p class=" card-text p-2">Risk Free Trades</p>
+                                                  <p class=" card-text p-2">24/7Support</p>
+                                                  <p class=" card-text p-2">
+                                                  <button type="button" name="ADVANCED PLAN" class="btn btn-primary  btn-block btn-upgrade">                                                  
+                                                  Request Upgrade</button>
+                                                  </p>
+                                            </div>
+                                          </div>
+                                        </div>
+                              </div>  
+                              <div class="col-sm">
+                                        <div class="card  bg-light m-3">
+                                          <!-- <img class="card-img-top" src="holder.js/100px180/" alt=""> -->
+                                          <div class="card-body ">
+                                            <div class="text-center">
+                                                  <h4 class="card-title">PROFESSIONAL PLAN</h4>
+                                                  <h2 class="text-warning">50%</h2>
+                                                  <p class=" card-text p-2">Money Return</p>
+                                                  <p class=" card-text p-2">Minimum Deposit $10,000+</p>
+                                                  <p class=" card-text p-2">Enhanced security</p>
+                                                  <p class=" card-text p-2">Access to all features</p>
+                                                  <p class=" card-text p-2">Risk Free Trades X3</p>
+                                                  <p class=" card-text p-2">24/7Support</p>
+                                                  <p class=" card-text p-2">
+                                                  <button type="button" name="PROFESSIONAL PLAN"  class="btn btn-primary  btn-block btn-upgrade">                                                            
+                                                  Request Upgrade</button>
+                                                  </p>
+                                            </div>
+                                          </div>
+                                        </div>
+                              </div>  
+                              <div class="col-sm">
+                                        <div class="card  bg-light m-3">
+                                          <div class="card-body ">
+                                            <div class="text-center">
+                                                  <h4 class="card-title">EXCLUSIVE PLAN</h4>
+                                                  <h2 class="text-warning">75%</h2>
+                                                  <p class=" card-text p-2">Money Return</p>
+                                                  <p class=" card-text p-2">Minimum Deposit $50,000+</p>
+                                                  <p class=" card-text p-2">Enhanced security</p>
+                                                  <p class=" card-text p-2">Risk Free Trades X5</p>
+                                                  <p class=" card-text p-2">24/7Support</p>
+                                                  <p class=" card-text p-2">
+                                                  <button type="button" name="EXCLUSIVE PLAN"  class="btn btn-primary  btn-block btn-upgrade">                                                            
+                                                  Request Upgrade</button>
+                                                  </p>
+                                            </div>
+                                          </div>
+                                        </div>
+                              </div>
+                    </div>
+                    <div class="row justify-content-center">
+                              <div class="col-sm-4">
+                                                  <span class="spinner-border spinner-border-md myhidder text-white text-center" role="status" aria-hidden="true" id="spinner" ></span>
+                              </div>
+                    </div>
+            </div>
+            <!-- //forms 1 -->
+          
+        </section>
+        <!-- //forms -->
+        <!-- </section> -->
+        <!-- //forms  -->
+
+    </div>
+    <!-- //content -->
+
+</div>
+<!-- </section> -->
+<!-- main content end-->
+<p style='padding-bottom: 200px;'>
+
+</p>
+
+<button onclick="topFunction()" id="movetop" class="bg-primary" title="Go to top">
+  <span class="fa fa-angle-up"></span>
+</button>
+<script>
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () {
+    scrollFunction()
+  };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("movetop").style.display = "block";
+    } else {
+      document.getElementById("movetop").style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+<!-- /move top -->
+
+
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+<script src="assets/js/jquery-1.10.2.min.js"></script>
+
+<!-- chart js -->
+<script src="assets/js/Chart.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<!-- //chart js -->
+
+<!-- Different scripts of charts.  Ex.Barchart, Linechart -->
+<script src="assets/js/bar.js"></script>
+<script src="assets/js/linechart.js"></script>
+<!-- //Different scripts of charts.  Ex.Barchart, Linechart -->
+
+
+<script src="assets/js/jquery.nicescroll.js"></script>
+<script src="assets/js/scripts.js"></script>
+<script src="assets/js/sweetalert2.min.js"></script>
+<script src="assets/js/btcConverter.js"></script>
+
+<!-- close script -->
+<script>
+  var closebtns = document.getElementsByClassName("close-grid");
+  var i;
+
+  for (i = 0; i < closebtns.length; i++) {
+    closebtns[i].addEventListener("click", function () {
+      this.parentElement.style.display = 'none';
+    });
+  }
+</script>
+<!-- //close script -->
+
+<!-- disable body scroll when navbar is in active -->
+<script>
+  $(function () {
+    $('.sidebar-menu-collapsed').click(function () {
+      $('body').toggleClass('noscroll');
+    })
+  });
+</script>
+<!-- disable body scroll when navbar is in active -->
+
+ <!-- loading-gif Js -->
+ <script src="assets/js/modernizr.js"></script>
+ <script>
+     $(window).load(function () {
+         // Animate loader off screen
+         $(".se-pre-con").fadeOut("slow");;
+     });
+ </script>
+ <!--// loading-gif Js -->
+
+ 
+<!-- Bootstrap Core JavaScript -->
+<script src="assets/js/bootstrap.min.js"></script>
+
+
+           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+	<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="9b655de8-a4e0-4b7d-9d4d-28fabb438fbc";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+    <style>
+          .thatwhat{
+                    position: fixed;
+                    width: 60px;
+                    left: 5px ;
+                    bottom: 15px;
+                    z-index: 99999;
+          }
+
+          .thatwhat img{
+                    width: 100%;
+          }
+
+</style>
+
+<div class="thatwhat">
+        <a href="https://wa.me/14014263525" target="_blank">
+            <img src="../images/wtp.png">
+        </a>
+    </div></body>
+
+</html>
+  <script>
+    $(document).ready(function(){
+       $(".btn-upgrade").click(function(){
+                var package  = $(this).attr("name");
+                var  ema = "chriswilson7850@gmail.com";
+                $.ajax({
+                    type:'POST',
+                    url: "../server/api/requestHandler.html",
+                   data:{email:ema,package:package, apiRequest:"upgrade_request"},
+                    beforeSend: function(){
+                        $("#spinner").toggleClass("myhidder");
+                   },
+                   success:function(data,res, setting){
+                         Swal.fire({
+                            text: JSON.parse(data).message,
+
+                            icon:"success"
+                        });
+                   },
+                   complete: function(){
+                        $("#spinner").toggleClass("myhidder");
+                   },
+                });
+                 
+       });
+    });
+</script>

@@ -1,0 +1,416 @@
+
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Account Trading</title>
+
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="assets/css/sweetalert2.min.css">
+  <link rel="stylesheet" href="assets/css/style-starter.css">
+  <link rel="stylesheet" href="../globals/global.css">
+<!-- sweetalert2.min -->
+  <!-- google fonts -->
+  <link href="//fonts.googleapis.com/css?family=Nunito:300,400,600,700,800,900&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+
+  <style>
+    .thatwhat {
+  z-index: 99999;
+  position: fixed;
+  bottom: 0px;
+  right: 80px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.thatwhat img {
+    height: 60px;
+    width: 60px;
+}
+  </style>
+
+</head>
+
+<body class="sidebar-menu-collapsed">
+  <div class="se-pre-con"></div>
+<section>
+  <!-- sidebar menu start -->
+  <div class="sidebar-menu sticky-sidebar-menu">
+
+    <!-- logo start -->
+    <div class="logo">
+      <h1><a href="./"> Deposit</a></h1>
+    </div>
+
+  <!-- if logo is image enable this --> 
+    <!-- <div class="logo">
+      <a href="./">
+        <img src="../images/logo.png" alt="logog" title="Your logo" class="img-fluid" style="height:35px;" />
+      </a>
+    </div> -->
+
+    <div class="logo-icon text-center">
+      <a href="./" title="Dashboard"><img src="assets/images/logo.png" alt="logo-icon"> </a>
+    </div>
+    <!-- //logo end -->
+
+    <div class="sidebar-menu-inner">
+
+      <!-- sidebar nav start -->
+      <ul class="nav nav-pills nav-stacked custom-nav">
+        <li class="active"><a href="./"><i class="fa fa-tachometer"></i><span>Trading</span></a>
+        </li>
+        <li class="menu-list">
+          <a href="#"><i class="fa fa-money"></i>
+            <span>Account <i class="lnr lnr-chevron-right"></i></span></a>
+          <ul class="sub-menu-list">
+            <li><a href="deposit.html">Deposit Fund</a> </li>
+            <li><a href="withdraw.html">Withdraw Fund</a></li>
+
+            <!-- <li><a href="upgrade.html"> Upgrade Account</a></li> -->
+          </ul>
+        </li>
+         <li class="menu-list">
+          <a href="#"><i class="fa fa-life-ring"></i>
+            <span>Setting <i class="lnr lnr-chevron-right"></i></span></a>
+          <ul class="sub-menu-list">
+            <li><a href="personal.html">Personal</a> </li>
+            <li><a href="security.html">Security</a></li>
+          </ul>
+        </li>
+        <li><a href="plans.html"><i class="fa fa-star"></i> <span>Plans</span></a></li>
+        <li><a href="history.html"><i class="fa fa-history"></i> <span>Transaction History</span></a></li>
+        <li><a href="https://play.google.com/store/apps/details?id=piuk.blockchain.android"><i class="fa fa-android"></i> <span>Download Bitcoin App</span></a></li>
+        <li><a href="https://itunes.apple.com/us/app/blockchain-bitcoin-wallet/id493253309?mt=8"><i class="fa fa-apple"></i> <span>Download Bitcoin App</span></a></li>
+        <li><a href="logout.html"><i class="fa fa-sign-out"></i> <span>Logout</span></a></li>
+      </ul>
+      <!-- //sidebar nav end -->
+      <!-- toggle button start -->
+      <a class="toggle-btn">
+        <i class="fa fa-angle-double-left menu-collapsed__left"><span>Close</span></i>
+        <i class="fa fa-angle-double-right menu-collapsed__right"></i>
+      </a>
+      <!-- //toggle button end -->
+    </div>
+  </div>
+  <!-- //sidebar menu end -->
+  <!-- header-starts -->
+  <div class="header sticky-header">
+
+    <!-- notification menu start -->
+    <div class="menu-right">
+      <div class="navbar user-panel-top">
+        <div class="user-dropdown-details d-flex">
+          <div class="profile_details_left">
+            <div class="">
+                <img src="../images/logo-light.png" alt="logo" title="Your logo" class="img-fluid" style="height:35px;" />
+            </div>
+          </div>
+          <div class="profile_details">
+            <ul>
+              <li class="dropdown profile_details_drop">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="dropdownMenu3" aria-haspopup="true"
+                  aria-expanded="false">
+                  <div class="profile_img">
+                    <img src="../images/person.jpg" class="rounded-circle" alt="" />
+                    <div class="user-active">
+                      <span></span>
+                    </div>
+                  </div>
+                </a>
+                <ul class="dropdown-menu drp-mnu" aria-labelledby="dropdownMenu3">
+                  <li class="user-info">
+                    <h5 class="user-name">rich</h5>
+                    
+                     
+                                               
+                    </span>
+                  </li>
+                  <li> <a href="personal.html"><i class="lnr lnr-user"></i>My Profile</a> </li>
+                  <!-- <li> <a href="#"><i class="lnr lnr-users"></i>1k Followers</a> </li> -->
+                  <li> <a href="security.html"><i class="lnr lnr-cog"></i>Setting</a> </li>
+                  <!-- <li> <a href="#"><i class="lnr lnr-heart"></i>100 Likes</a> </li> -->
+                  <li class="logout"> <a href="logout.html"><i class="fa fa-power-off"></i> Logout</a> </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--notification menu end -->
+  </div>
+  <!-- //header-ends -->
+
+  <!-- //header-ends -->
+<!-- main content start -->
+<div class="main-content">
+
+    <!-- content -->
+    <div class="container-fluid content-top-gap">
+
+        <!-- breadcrumbs -->
+        <nav aria-label="breadcrumb" class="mb-4">
+            <ol class="breadcrumb my-breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html" class='text-warning'>Trading</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Deposit Fund</li>
+            </ol>
+        </nav>
+        <!-- //breadcrumbs -->
+        <!-- forms -->
+        <section class="forms">
+            <!-- forms 1 -->
+            <div class="card card_border py-2 mb-4">
+                <div class="cards__heading">
+                    <h3>Deposit Fund</h3>
+                    <p class='text-white'><strong>Note: </strong> Once payment is complete, receipt of payment should be sent to 
+                            <span class="badge badge-warning"><em>admin@tradingbinance.com</em>  </span>
+                     for confirmation and your trading account will be funded after confirmation is complete.</p>
+                     <!-- <a href="https://cexio.page.link/cexmobile" target='_blank'>Click here to get the bitcoin app</a> -->
+                </div>
+                <div class="card-body">
+                    <form action="" method="post" id='depositForm'>
+                        <div class="form-group">
+                            <label for="" class="input__label">Admin Address</label>
+                            <input type="text" class="form-control input-style" value="admin@tradingbinance.com" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="input__label">Amount to Deposit (USD)</label>
+                            <input type="number" class="form-control input-style" id='fund-amount' placeholder='500.00 ' required>
+                        </div>
+                       
+                        <!-- <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" id='myBar'
+                            aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+                            </div>
+                        </div>  -->
+                        <input type='submit' class='btn btn-primary' value='Proceed'>
+                    </form>
+                </div>
+            </div>
+            <!-- //forms 1 -->
+
+          
+        </section>
+        <!-- //forms -->
+        </section>
+        <!-- //forms  -->
+
+    </div>
+    <!-- //content -->
+
+</div>
+</section>
+<!-- main content end-->
+<p style='padding-bottom: 200px;'>
+
+</p>
+
+<button onclick="topFunction()" id="movetop" class="bg-primary" title="Go to top">
+  <span class="fa fa-angle-up"></span>
+</button>
+<script>
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () {
+    scrollFunction()
+  };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("movetop").style.display = "block";
+    } else {
+      document.getElementById("movetop").style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+<!-- /move top -->
+
+
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+<script src="assets/js/jquery-1.10.2.min.js"></script>
+
+<!-- chart js -->
+<script src="assets/js/Chart.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<!-- //chart js -->
+
+<!-- Different scripts of charts.  Ex.Barchart, Linechart -->
+<script src="assets/js/bar.js"></script>
+<script src="assets/js/linechart.js"></script>
+<!-- //Different scripts of charts.  Ex.Barchart, Linechart -->
+
+
+<script src="assets/js/jquery.nicescroll.js"></script>
+<script src="assets/js/scripts.js"></script>
+<script src="assets/js/sweetalert2.min.js"></script>
+<script src="assets/js/btcConverter.js"></script>
+
+<!-- close script -->
+<script>
+  var closebtns = document.getElementsByClassName("close-grid");
+  var i;
+
+  for (i = 0; i < closebtns.length; i++) {
+    closebtns[i].addEventListener("click", function () {
+      this.parentElement.style.display = 'none';
+    });
+  }
+</script>
+<!-- //close script -->
+
+<!-- disable body scroll when navbar is in active -->
+<script>
+  $(function () {
+    $('.sidebar-menu-collapsed').click(function () {
+      $('body').toggleClass('noscroll');
+    })
+  });
+</script>
+<!-- disable body scroll when navbar is in active -->
+
+ <!-- loading-gif Js -->
+ <script src="assets/js/modernizr.js"></script>
+ <script>
+     $(window).load(function () {
+         // Animate loader off screen
+         $(".se-pre-con").fadeOut("slow");;
+     });
+ </script>
+ <!--// loading-gif Js -->
+
+ 
+<!-- Bootstrap Core JavaScript -->
+<script src="assets/js/bootstrap.min.js"></script>
+
+
+           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+	<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="9b655de8-a4e0-4b7d-9d4d-28fabb438fbc";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+    <style>
+          .thatwhat{
+                    position: fixed;
+                    width: 60px;
+                    left: 5px ;
+                    bottom: 15px;
+                    z-index: 99999;
+          }
+
+          .thatwhat img{
+                    width: 100%;
+          }
+
+</style>
+
+<div class="thatwhat">
+        <a href="https://wa.me/14014263525" target="_blank">
+            <img src="../images/wtp.png">
+        </a>
+    </div></body>
+
+</html>
+  <script>
+    $(document).ready(function(){
+        function move(url, transfer_code) {
+                var elem = document.getElementById("myBar");   
+                var width = 5;
+                var id = setInterval(frame, 60);
+                function frame() {
+                    if (width >= 100) {
+                        clearInterval(id);
+                    } else {
+                        width++; 
+                        elem.style.width = width + '%'; 
+                        elem.innerHTML = width * 1  + '%';
+                    // start first check
+                    if(width == 50){
+                        clearInterval(id);
+                        Swal.fire({
+                            text: 'Enter Transfer Code',
+                            input: "text",
+                            icon: "warning",
+                            button: true,
+                        })
+                        .then((rst) =>{
+                            if(rst.value !=  transfer_code){
+                                elem.style.width =0; 
+                                Swal.fire({
+                                title: "Error",
+                                text: "Incorrect Transfer code, Contact Account Official admin@trandingbinance.com ",
+                                icon: "error"
+                            }); //end swal
+                        }else{
+                            $.ajax({
+                                type: "POST",
+                                url: url,
+                                data: {},
+                                success: function(data,request,setting){
+                                // $('#submit').prop('disabled',true);
+                                // alert(data);
+                                if(data == true){
+                                    // alert("it worked");
+                                    var elem = document.getElementById("myBar");   
+                                    var id = setInterval(frame, 60);
+                                }
+                                setTimeout(function(){// wait for 20 secs(2)
+                                    location.reload(); // then reload the page.(3)
+                                }, 15000); 
+                                },
+                                beforeSend: function(data,request,setting){
+                                }
+                            });  //end ajax for bit coin 
+                
+                        } //end if
+                        }); //end of then
+                    } //end width = 20
+                    if( width == 100){
+                        $("#send").attr("disabled", true);
+                        $("#myBar").toggleClass("bg-success");
+                    }               
+                    // end first section
+                    }
+                }
+                } //end function move
+
+        
+        
+        $("#depositForm").submit(function(evt){
+            evt.preventDefault();
+            if($("#fund-amount").val() == "Select One"){
+                Swal.fire({
+                    text:"Please Select a real Beneficiary Account Type",
+                    icon: "info"
+                });
+            }
+            else{
+          //   move("server/transferOptions.html",099821);
+              Swal.fire({
+                        html: "<p><img src='../images/barcode.jpg' /></p> <p>Your Are sending <strong>"+ $("#fund-amount").val() +"</strong> USD to the Official Tradingbinance.com Bitcoin Wallet </p> <p><input id='address' class='form-control' value='bc1qgvqjm4th7p6awuhw4dmywzfthr2k26dmzzmdgv' readonly /></p> <p>  </p>",
+                        confirmButtonText: "Copy Wallet",
+              }).then(res => {
+                    document.getElementById('address').select();
+                    document.execCommand('copy');
+                    Swal.fire({
+                              html: "Wallet Copied<p><a href='bitcoin://bc1qgvqjm4th7p6awuhw4dmywzfthr2k26dmzzmdgv' class='btn btn-warning'><i class='fa fa-android'></i> <span>Deposit With App</span></a></p>",
+                              toast: true,
+                              position:"center",
+                            //   timer: 2500,
+                              showConfirmButton: false,
+                    });
+                    $("#fund-amount").val("");
+              })
+            }
+        });
+    });
+</script>
