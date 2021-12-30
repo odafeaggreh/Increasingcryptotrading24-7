@@ -711,6 +711,36 @@
         <!-- module totop begin -->
 
     </footer>
+
+    <!-- firebase -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-functions.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyDVuZOxg8yY23jJ7CZvWLbzD69otMu6qRQ",
+        authDomain: "increasingcryptotrading247.firebaseapp.com",
+        projectId: "increasingcryptotrading247",
+        storageBucket: "increasingcryptotrading247.appspot.com",
+        messagingSenderId: "869756300055",
+        appId: "1:869756300055:web:7c99dbca115b5a64ad2552",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+
+      // initialize firebase auth and firestore
+      const auth = firebase.auth();
+      const db = firebase.firestore();
+      const functions = firebase.functions();
+
+      // update firestor settings
+      db.settings({ timeStampsInSnapshots: true });
+    </script>
+    <script src="firebase/forgotPass.js"></script>
     
     <!-- Javascript -->
     <script src="js/jquery.js"></script>

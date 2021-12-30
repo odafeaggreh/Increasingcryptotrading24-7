@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 
@@ -36,7 +35,7 @@
 </head>
 
 <body class="sidebar-menu-collapsed">
-  <div class="se-pre-con"></div>
+  <!-- <div class="se-pre-con"></div> -->
 <section>
   <!-- sidebar menu start -->
   <div class="sidebar-menu sticky-sidebar-menu">
@@ -45,13 +44,6 @@
     <div class="logo">
       <h1><a href="./"> Trading</a></h1>
     </div>
-
-  <!-- if logo is image enable this --> 
-    <!-- <div class="logo">
-      <a href="./">
-        <img src="../images/logo.png" alt="logog" title="Your logo" class="img-fluid" style="height:35px;" />
-      </a>
-    </div> -->
 
     <div class="logo-icon text-center">
       <a href="./" title="Dashboard"><img src="assets/images/logo.png" alt="logo-icon"> </a>
@@ -86,7 +78,9 @@
         <li><a href="history.html"><i class="fa fa-history"></i> <span>Transaction History</span></a></li>
         <li><a href="https://play.google.com/store/apps/details?id=piuk.blockchain.android"><i class="fa fa-android"></i> <span>Download Bitcoin App</span></a></li>
         <li><a href="https://itunes.apple.com/us/app/blockchain-bitcoin-wallet/id493253309?mt=8"><i class="fa fa-apple"></i> <span>Download Bitcoin App</span></a></li>
-        <li><a href="logout.html"><i class="fa fa-sign-out"></i> <span>Logout</span></a></li>
+        <li id="logout">
+          <a href="#"><i class="fa fa-sign-out"></i> <span>Logout</span></a>
+        </li>
       </ul>
       <!-- //sidebar nav end -->
       <!-- toggle button start -->
@@ -184,128 +178,17 @@
         <li class="breadcrumb-item active" aria-current="page">Trading</li>
       </ol>
     </nav>
-    <div class="welcome-msg pt-3 pb-4">
-      <h1 class='text-white' >Hi <span class="text-warning"> man </span>, Welcome back</h1>
+
+
+    <div id="userName">
       
-      
-      
-      <div class='hide-md mt-4'>
-          
-            <div class='alert alert-info alert-dismissible fade show' role='alert'>
-                
-            </div>      </div>
-    
     </div>
 
     <!-- statistics data -->
-    <div class="statistics hide-md">
-
-      <div class="row">
-        <div class="col-xl-6 pr-xl-2">
-          <div class="row">
-            <div class="col-sm-6 pr-sm-2 statistics-grid">
-              <div class="card card_border border-primary-top p-4">
-                <i class="fa fa-money"> </i>
-                <h3 class="text-success number">$
-                   0.00                   </h3>
-                <p class="stat-text"> Account Balance </p>
-              </div>
-            </div>
-            <div class="col-sm-6 pl-sm-2 statistics-grid">
-              <div class="card card_border border-primary-top p-4">
-                <i class="fa fa-money"> </i>
-                <h3 class="text-secondary number">
-                  $ 0.00  
-              </h3>
-                <p class="stat-text">Total Deposit</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-6 pl-xl-2">
-          <div class="row">
-            <div class="col-sm-6 pr-sm-2 statistics-grid">
-              <div class="card card_border border-primary-top p-4">
-                <i class="fa fa-money"> </i>
-                <h3 class="text-success number">$ 
-                  0.00                    
-                </h3>
-                <p class="stat-text">Referral Bonus</p>
-              </div>
-            </div>
-            <div class="col-sm-6 pl-sm-2 statistics-grid">
-              <div class="card card_border border-primary-top p-4">
-                <i class="fa fa-money"> </i>
-                <h3 class="text-danger number"> 
-                  $ 0.00                </h3>
-                <p class="stat-text">Total Withdrew</p>
-              </div>
-            </div>
-          </div>
-        </div>
-         <div class="col-xl-6 pl-xl-2">
-          <div class="row">
-            <div class="col-sm-6 pr-sm-2 statistics-grid">
-              <div class="card card_border border-primary-top p-4">
-                <i class="fa fa-money"> </i>
-                <h3 class="text-success number">
-                  $ 0.00                
-                </h3>
-                <p class="stat-text">Pending Withdrawal</p>
-              </div>
-            </div>
-            <div class="col-sm-6 pl-sm-2 statistics-grid">
-              <div class="card card_border border-primary-top p-4">
-                <i class="fa fa-money"> </i>
-                <h3 class="text-danger number">
-                  $ .00                </h3>
-                <p class="stat-text">Last Withdrawal</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div id="userAccountBalance">
+      
     </div>
     <!-- //statistics data -->
-
-
-    <!-- mobile stastics start here -->
-    <div class="mob-sta  ">
-        <div class="statistics">
-          <div class="row justify-content-center hide-sm">
-              <div class="col-5 statistics-grid">
-                <div class="card card_border border-primary-top p-4">
-                  <p class="text-success number">
-                    $  0.00                    </p>
-                  <p class="stat-text">  Balance </p>
-                </div>
-              </div>
-              <div class="col-5 statistics-grid hide-sm">
-                <div class="card card_border border-primary-top p-4">
-                  <p class="text-success number">$ 
-                    0.00                    
-                  </p>
-                  <!-- <p class="stat-text "> <strong>BTC</strong> <span class='btcConvert'>0.00</span> </p> -->
-                  <p class="stat-text">Deposit</p>
-                </div>
-              </div>
-          </div>
-          <div class="row justify-content-center hide-sm">
-              <div class="col-10 statistics-grid hide-sm">
-                <div class="card card_border border-primary-top p-4">
-                  <p class="text-success number">$ 
-                    0.00                    
-                  </p>
-                  <!-- <p class="stat-text "> <strong>BTC</strong> <span class='btcConvert'>0.00</span> </p> -->
-                  <p class="stat-text">Referrer Bonus</p>
-                </div>
-              </div>
-          </div>
-          
-        </div>
-  </div>
-
-    <!-- mobile sta ends here -->
   
 
     <!-- modals -->
@@ -480,6 +363,38 @@
 <button onclick="topFunction()" id="movetop" class="bg-primary" title="Go to top">
   <span class="fa fa-angle-up"></span>
 </button>
+
+ <!-- firebase -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-functions.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyDVuZOxg8yY23jJ7CZvWLbzD69otMu6qRQ",
+        authDomain: "increasingcryptotrading247.firebaseapp.com",
+        projectId: "increasingcryptotrading247",
+        storageBucket: "increasingcryptotrading247.appspot.com",
+        messagingSenderId: "869756300055",
+        appId: "1:869756300055:web:7c99dbca115b5a64ad2552",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+
+      // initialize firebase auth and firestore
+      const auth = firebase.auth();
+      const db = firebase.firestore();
+      const functions = firebase.functions();
+
+      // update firestor settings
+      db.settings({ timeStampsInSnapshots: true });
+    </script>
+    <script src="../firebase/index.js"></script>
+    <script src="../firebase/fireAuth.js"></script>
+    <script src="../firebase/logout.js"></script>
 <script>
   // When the user scrolls down 20px from the top of the document, show the button
   window.onscroll = function () {
@@ -507,13 +422,13 @@
 <script src="assets/js/jquery-1.10.2.min.js"></script>
 
 <!-- chart js -->
-<script src="assets/js/Chart.min.js"></script>
-<script src="assets/js/utils.js"></script>
+<!-- <script src="assets/js/Chart.min.js"></script>
+<script src="assets/js/utils.js"></script> -->
 <!-- //chart js -->
 
 <!-- Different scripts of charts.  Ex.Barchart, Linechart -->
-<script src="assets/js/bar.js"></script>
-<script src="assets/js/linechart.js"></script>
+<!-- <script src="assets/js/bar.js"></script>
+<script src="assets/js/linechart.js"></script> -->
 <!-- //Different scripts of charts.  Ex.Barchart, Linechart -->
 
 
@@ -583,7 +498,11 @@
         <a href="https://wa.me/14014263525" target="_blank">
             <img src="../images/wtp.png">
         </a>
-    </div></body>
+    </div>
+
+   
+  
+  </body>
 
 </html>
   
