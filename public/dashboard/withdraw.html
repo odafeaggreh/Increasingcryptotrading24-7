@@ -1,442 +1,452 @@
-
-
 <!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Account Trading</title>
+    <title>Account Trading</title>
 
-  <!-- Template CSS -->
-  <link rel="stylesheet" href="assets/css/sweetalert2.min.css">
-  <link rel="stylesheet" href="assets/css/style-starter.css">
-  <link rel="stylesheet" href="../globals/global.css">
-<!-- sweetalert2.min -->
-  <!-- google fonts -->
-  <link href="//fonts.googleapis.com/css?family=Nunito:300,400,600,700,800,900&display=swap" rel="stylesheet">
-	<link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="assets/css/sweetalert2.min.css">
+    <link rel="stylesheet" href="assets/css/style-starter.css">
+    <link rel="stylesheet" href="../globals/global.css">
+    <!-- sweetalert2.min -->
+    <!-- google fonts -->
+    <link href="//fonts.googleapis.com/css?family=Nunito:300,400,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
 
-  <style>
-    .thatwhat {
-  z-index: 99999;
-  position: fixed;
-  bottom: 0px;
-  right: 80px;
-  padding-left: 20px;
-  padding-bottom: 20px;
-}
+    <style>
+        .thatwhat {
+            z-index: 99999;
+            position: fixed;
+            bottom: 0px;
+            right: 80px;
+            padding-left: 20px;
+            padding-bottom: 20px;
+        }
 
-.thatwhat img {
-    height: 60px;
-    width: 60px;
-}
-  </style>
+        .thatwhat img {
+            height: 60px;
+            width: 60px;
+        }
+    </style>
 
 </head>
 
 <body class="sidebar-menu-collapsed">
-  <div class="se-pre-con"></div>
-<section>
-  <!-- sidebar menu start -->
-  <div class="sidebar-menu sticky-sidebar-menu">
+    <div class="se-pre-con"></div>
+    <section>
+        <!-- sidebar menu start -->
+        <div class="sidebar-menu sticky-sidebar-menu">
 
-    <!-- logo start -->
-    <div class="logo">
-      <h1><a href="./"> Withdraw</a></h1>
-    </div>
+            <!-- logo start -->
+            <div class="logo">
+                <h1><a href="./"> Withdraw</a></h1>
+            </div>
 
-  <!-- if logo is image enable this --> 
-    <!-- <div class="logo">
+            <!-- if logo is image enable this -->
+            <!-- <div class="logo">
       <a href="./">
         <img src="../images/logo.png" alt="logog" title="Your logo" class="img-fluid" style="height:35px;" />
       </a>
     </div> -->
 
-    <div class="logo-icon text-center">
-      <a href="./" title="Dashboard"><img src="assets/images/logo.png" alt="logo-icon"> </a>
-    </div>
-    <!-- //logo end -->
-
-    <div class="sidebar-menu-inner">
-
-      <!-- sidebar nav start -->
-      <ul class="nav nav-pills nav-stacked custom-nav">
-        <li class="active"><a href="./"><i class="fa fa-tachometer"></i><span>Trading</span></a>
-        </li>
-        <li class="menu-list">
-          <a href="#"><i class="fa fa-money"></i>
-            <span>Account <i class="lnr lnr-chevron-right"></i></span></a>
-          <ul class="sub-menu-list">
-            <li><a href="deposit.html">Deposit Fund</a> </li>
-            <li><a href="withdraw.html">Withdraw Fund</a></li>
-
-            <!-- <li><a href="upgrade.html"> Upgrade Account</a></li> -->
-          </ul>
-        </li>
-         <li class="menu-list">
-          <a href="#"><i class="fa fa-life-ring"></i>
-            <span>Setting <i class="lnr lnr-chevron-right"></i></span></a>
-          <ul class="sub-menu-list">
-            <li><a href="personal.html">Personal</a> </li>
-            <li><a href="security.html">Security</a></li>
-          </ul>
-        </li>
-        <li><a href="plans.html"><i class="fa fa-star"></i> <span>Plans</span></a></li>
-        <li><a href="history.html"><i class="fa fa-history"></i> <span>Transaction History</span></a></li>
-        <li><a href="https://play.google.com/store/apps/details?id=piuk.blockchain.android"><i class="fa fa-android"></i> <span>Download Bitcoin App</span></a></li>
-        <li><a href="https://itunes.apple.com/us/app/blockchain-bitcoin-wallet/id493253309?mt=8"><i class="fa fa-apple"></i> <span>Download Bitcoin App</span></a></li>
-        <li><a href="logout.html"><i class="fa fa-sign-out"></i> <span>Logout</span></a></li>
-      </ul>
-      <!-- //sidebar nav end -->
-      <!-- toggle button start -->
-      <a class="toggle-btn">
-        <i class="fa fa-angle-double-left menu-collapsed__left"><span>Close</span></i>
-        <i class="fa fa-angle-double-right menu-collapsed__right"></i>
-      </a>
-      <!-- //toggle button end -->
-    </div>
-  </div>
-  <!-- //sidebar menu end -->
-  <!-- header-starts -->
-  <div class="header sticky-header">
-
-    <!-- notification menu start -->
-    <div class="menu-right">
-      <div class="navbar user-panel-top">
-        <div class="user-dropdown-details d-flex">
-          <div class="profile_details_left">
-            <div class="">
-                <img src="../images/logo-light.png" alt="logo" title="Your logo" class="img-fluid" style="height:35px;" />
+            <div class="logo-icon text-center">
+                <a href="./" title="Dashboard"><img src="assets/images/logo.png" alt="logo-icon"> </a>
             </div>
-          </div>
-          <div class="profile_details">
-            <ul>
-              <li class="dropdown profile_details_drop">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="dropdownMenu3" aria-haspopup="true"
-                  aria-expanded="false">
-                  <div class="profile_img">
-                    <img src="../images/person.jpg" class="rounded-circle" alt="" />
-                    <div class="user-active">
-                      <span></span>
-                    </div>
-                  </div>
-                </a>
-                <ul class="dropdown-menu drp-mnu" aria-labelledby="dropdownMenu3">
-                  <li class="user-info">
-                    <h5 class="user-name">rich</h5>
+            <!-- //logo end -->
+
+            <div class="sidebar-menu-inner">
+
+                <!-- sidebar nav start -->
+                <ul class="nav nav-pills nav-stacked custom-nav">
+                    <li class="active"><a href="./"><i class="fa fa-tachometer"></i><span>Trading</span></a>
+                    </li>
+                    <li class="menu-list">
+                        <a href="#"><i class="fa fa-money"></i>
+                            <span>Account <i class="lnr lnr-chevron-right"></i></span></a>
+                        <ul class="sub-menu-list">
+                            <li><a href="deposit.html">Deposit Fund</a> </li>
+                            <li><a href="withdraw.html">Withdraw Fund</a></li>
+
+                            <!-- <li><a href="upgrade.html"> Upgrade Account</a></li> -->
+                        </ul>
+                    </li>
                     
+                    <li><a href="plans.html"><i class="fa fa-star"></i> <span>Plans</span></a></li>
                     
-                                               
-                    </span>
-                  </li>
-                  <li> <a href="personal.html"><i class="lnr lnr-user"></i>My Profile</a> </li>
-                  <!-- <li> <a href="#"><i class="lnr lnr-users"></i>1k Followers</a> </li> -->
-                  <li> <a href="security.html"><i class="lnr lnr-cog"></i>Setting</a> </li>
-                  <!-- <li> <a href="#"><i class="lnr lnr-heart"></i>100 Likes</a> </li> -->
-                  <li class="logout"> <a href="logout.html"><i class="fa fa-power-off"></i> Logout</a> </li>
+                    <li><a href="https://play.google.com/store/apps/details?id=piuk.blockchain.android"><i class="fa fa-android"></i> <span>Download Bitcoin App</span></a></li>
+                    <li><a href="https://itunes.apple.com/us/app/blockchain-bitcoin-wallet/id493253309?mt=8"><i class="fa fa-apple"></i> <span>Download Bitcoin App</span></a></li>
+                    <li><a href="logout.html"><i class="fa fa-sign-out"></i> <span>Logout</span></a></li>
                 </ul>
-              </li>
-            </ul>
-          </div>
+                <!-- //sidebar nav end -->
+                <!-- toggle button start -->
+                <a class="toggle-btn">
+                    <i class="fa fa-angle-double-left menu-collapsed__left"><span>Close</span></i>
+                    <i class="fa fa-angle-double-right menu-collapsed__right"></i>
+                </a>
+                <!-- //toggle button end -->
+            </div>
         </div>
-      </div>
-    </div>
-    <!--notification menu end -->
-  </div>
-  <!-- //header-ends -->
+        <!-- //sidebar menu end -->
+        <!-- header-starts -->
+        <div class="header sticky-header">
 
-  <!-- //header-ends -->
-<!-- main content start -->
-<div class="main-content">
-
-    <!-- content -->
-    <div class="container-fluid content-top-gap">
-
-        <!-- breadcrumbs -->
-        <nav aria-label="breadcrumb" class="mb-4">
-            <ol class="breadcrumb my-breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html" class='text-warning'>Trading</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Withdraw Fund</li>
-            </ol>
-        </nav>
-        <!-- //breadcrumbs -->
-        <!-- forms -->
-        <section class="forms">
-            <!-- forms 1 -->
-            <div class="card card_border py-2 mb-4">
-                    <div class="cards__heading">
-                              <h3>Withdraw Fund</h3>
-                              <p class='text-white'>Withdrawal are sent directly to the associated address with your trading account, please do ensure to provide your correct wallet address below </p>
-                              
-                    </div>
-                    <div class="card-body">
-                              <div class="statistics">
-                                        <div class="row justify-content-end">
-                                                  <div class="col-xl-6 pl-xl-2">
-                                                            <div class="row">
-                                                                      <div class="col-sm-6 pr-sm-2 statistics-grid">
-                                                                                <div class="card card_border border-primary-top p-4">
-                                                                                          <i class="fa fa-money"> </i>
-                                                                                          <h3 class="text-success number">$ 
-                                                                                             0.00  
-                                                                                          <!-- 0.00 -->
-                                                                                            </h3>
-                                                                                          <!-- <p class="stat-text "> <strong>BTC</strong> <span class='btcConvert'>0.00</span> </p> -->
-                                                                                          <p class="stat-text">Total Wallet Balance</p>
-                                                                                </div>
-                                                                      </div>
-                                                                      <div class="col-sm-6 pl-sm-2 statistics-grid">
-                                                                                <div class="card card_border border-primary-top p-4">
-                                                                                          <i class="fa fa-hashtag"> </i>
-                                                                                        <h3 class="text-danger number"> 
-                                                                                            0.00                                                                                        </h3>
-                                                                                          <p class="stat-text">Total Withdrawal</p>
-                                                                                </div>
-                                                                      </div>
-                                                            </div>
-                                                  </div>
+            <!-- notification menu start -->
+            <div class="menu-right">
+                <div class="navbar user-panel-top">
+                    <div class="user-dropdown-details d-flex">
+                        <div class="profile_details_left">
+                            <div class="">
+                                <img src="../images/logo-light.png" alt="logo" title="Your logo" class="img-fluid" style="height:35px;" />
+                            </div>
+                        </div>
+                        <div class="profile_details">
+                            <ul>
+                                <li class="dropdown profile_details_drop">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="dropdownMenu3" aria-haspopup="true" aria-expanded="false">
+                                        <div class="profile_img">
+                                            <img src="../images/person.jpg" class="rounded-circle" alt="" />
+                                            <div class="user-active">
+                                                <span></span>
+                                            </div>
                                         </div>
-                              </div>
-                              <div class="withdraw-option">
-                                        <div class="row justify-content-center">
-                                                  <div class="col-sm-6">
-                                                        <div class="card text-left">
-                                                            <form action="" method="post" id='withdrawForm'>
-                                                                      <div class="text-center p-3">
-                                                                                <!-- <img class="card-img-top img-fluid" src="../assets/img/crypt/BTC.png" style='width: 50px' > -->
-                                                                      </div>
-                                                                      <div class="card-body">
-                                                                                <h4 class="card-title text-warning">Withdraw directly to your account</h4>
-                                                                                <div class="form-group">
-                            <label for="" class="input__label">Method</label>
-                            <input type="text" class="form-control input-style" value="Bitcoin Wallet Payment" disabled>
+                                    </a>
+                                    <ul class="dropdown-menu drp-mnu" aria-labelledby="dropdownMenu3">
+                                        <li class="user-info">
+                                            <h5 class="user-name">rich</h5>
+
+
+
+                                            </span>
+                                        </li>
+                                        
+                                        <li class="logout"> <a href="logout.html"><i class="fa fa-power-off"></i> Logout</a> </li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="form-group">
-                            <label for="" class="input__label">Your Bitcoin Wallet Address</label>
-                            <input type="text" class="form-control input-style" id='fund-amount' placeholder='e.g 9wdbhjv1jjvdvjcdjhgwtthwj' required>
+                    </div>
+                </div>
+            </div>
+            <!--notification menu end -->
+        </div>
+        <!-- //header-ends -->
+
+        <!-- //header-ends -->
+        <!-- main content start -->
+        <div class="main-content">
+
+            <!-- content -->
+            <div class="container-fluid content-top-gap">
+
+                <!-- breadcrumbs -->
+                <nav aria-label="breadcrumb" class="mb-4">
+                    <ol class="breadcrumb my-breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html" class='text-warning'>Trading</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Withdraw Fund</li>
+                    </ol>
+                </nav>
+                <!-- //breadcrumbs -->
+                <!-- forms -->
+                <section class="forms">
+                    <!-- forms 1 -->
+                    <div class="card card_border py-2 mb-4">
+                        <div class="cards__heading">
+                            <h3>Withdraw Fund</h3>
+                            <p class='text-white'>Withdrawal are sent directly to the associated address with your trading account, please do ensure to provide your correct wallet address below </p>
+
                         </div>
-                       
-                        <!-- <div class="progress">
+                        <div class="card-body">
+                          <div id="userAccountBalance">
+                            
+                          </div>
+                            <div class="withdraw-option">
+                                <div class="row justify-content-center">
+                                    <div class="col-sm-6">
+                                        <div class="card text-left">
+                                            <form action="" method="post" id='withdrawForm'>
+                                                <div class="text-center p-3">
+                                                    <!-- <img class="card-img-top img-fluid" src="../assets/img/crypt/BTC.png" style='width: 50px' > -->
+                                                </div>
+                                                <div class="card-body">
+                                                    <h4 class="card-title text-warning">Withdraw directly to your account</h4>
+                                                    <div class="form-group">
+                                                        <label for="" class="input__label">Method</label>
+                                                        <input type="text" class="form-control input-style" value="Bitcoin Wallet Payment" disabled>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="" class="input__label">Your Bitcoin Wallet Address</label>
+                                                        <input type="text" class="form-control input-style" id='fund-amount' placeholder='e.g 9wdbhjv1jjvdvjcdjhgwtthwj' required>
+                                                    </div>
+
+                                                    <!-- <div class="progress">
                             <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" id='myBar'
                             aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%">
                             </div>
                         </div>  -->
-                        
-                                                                                <div class="form-group">
-                                                                                <input type="number" required
-                                                                                class="form-control" name="" id="amount" placeholder="Enter the Amount to withdraw">
-                                                                                </div>
-                                                                                <div class="text-center myhidder" id='showSuccess'>
-                                                                                          <span class="badge badge-success"><em>Withdrawal successful this page will reload in few seconds</em></span>
-                                                                                </div>
-                                                                                <div class="progress">
-                                                                                          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" id='myBar' aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%">
-                                                                                        </div>
-                                                                                </div> 
-                                                                                <button type="submit" class="btn btn-primary" id='btn_withdraw'>Withdraw</button>
-                                                                      </div>
-                                                                      </form>
-                                                            </div>
-                                                  </div>
-                                                  <div class="p-4">
-                                                            <p class ='text-white'><strong>Please note:</strong> before approving a withdrawal request, you may be required to submit proof of identity and address of the requester. Withdrawals are normally processed, using the same method as deposit was done. For security reasons, withdrawal requests to wallets, bank and creditcard accounts, not belonging to a trading account owner are denied.</p>
+
+                                                    <div class="form-group">
+                                                        <input type="number" required class="form-control" name="" id="amount" placeholder="Enter the Amount to withdraw">
                                                     </div>
-                                                  <!-- <div class="col-sm-3">
+                                                    <div class="text-center myhidder" id='showSuccess'>
+                                                        <span class="badge badge-success"><em>Withdrawal successful this page will reload in few seconds</em></span>
+                                                    </div>
+                                                    <div class="progress">
+                                                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" id='myBar' aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+                                                        </div>
+                                                    </div>
+                                                    <button type="submit" class="btn btn-primary" id='btn_withdraw'>Withdraw</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="p-4">
+                                        <p class='text-white'><strong>Please note:</strong> before approving a withdrawal request, you may be required to submit proof of identity and address of the requester. Withdrawals are normally processed, using the same method as deposit was done. For security reasons, withdrawal requests to wallets, bank and creditcard accounts, not belonging to a trading account owner are denied.</p>
+                                    </div>
+                                    <!-- <div class="col-sm-3">
                                                             <h1>Hello</h1>
                                                   </div> -->
-                                        </div>
-                              </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <!-- //forms 1 -->
+
+                </section>
+                <!-- //forms -->
+                <!-- </section> -->
+                <!-- //forms  -->
+
             </div>
-            <!-- //forms 1 -->
-          
-        </section>
-        <!-- //forms -->
+            <!-- //content -->
+
+        </div>
         <!-- </section> -->
-        <!-- //forms  -->
+        <!-- main content end-->
+        <p style='padding-bottom: 200px;'>
 
-    </div>
-    <!-- //content -->
+        </p>
 
-</div>
-<!-- </section> -->
-<!-- main content end-->
-<p style='padding-bottom: 200px;'>
+        <button onclick="topFunction()" id="movetop" class="bg-primary" title="Go to top">
+            <span class="fa fa-angle-up"></span>
+        </button>
+        <script>
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {
+                scrollFunction()
+            };
 
-</p>
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("movetop").style.display = "block";
+                } else {
+                    document.getElementById("movetop").style.display = "none";
+                }
+            }
 
-<button onclick="topFunction()" id="movetop" class="bg-primary" title="Go to top">
-  <span class="fa fa-angle-up"></span>
-</button>
-<script>
-  // When the user scrolls down 20px from the top of the document, show the button
-  window.onscroll = function () {
-    scrollFunction()
-  };
-
-  function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      document.getElementById("movetop").style.display = "block";
-    } else {
-      document.getElementById("movetop").style.display = "none";
-    }
-  }
-
-  // When the user clicks on the button, scroll to the top of the document
-  function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
-</script>
-<!-- /move top -->
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+        <!-- /move top -->
 
 
-<script src="assets/js/jquery-3.3.1.min.js"></script>
-<script src="assets/js/jquery-1.10.2.min.js"></script>
+        <script src="assets/js/jquery-3.3.1.min.js"></script>
+        <script src="assets/js/jquery-1.10.2.min.js"></script>
 
-<!-- chart js -->
-<script src="assets/js/Chart.min.js"></script>
-<script src="assets/js/utils.js"></script>
-<!-- //chart js -->
+        <!-- chart js -->
+        <script src="assets/js/Chart.min.js"></script>
+        <script src="assets/js/utils.js"></script>
+        <!-- //chart js -->
 
-<!-- Different scripts of charts.  Ex.Barchart, Linechart -->
-<script src="assets/js/bar.js"></script>
-<script src="assets/js/linechart.js"></script>
-<!-- //Different scripts of charts.  Ex.Barchart, Linechart -->
-
-
-<script src="assets/js/jquery.nicescroll.js"></script>
-<script src="assets/js/scripts.js"></script>
-<script src="assets/js/sweetalert2.min.js"></script>
-<script src="assets/js/btcConverter.js"></script>
-
-<!-- close script -->
-<script>
-  var closebtns = document.getElementsByClassName("close-grid");
-  var i;
-
-  for (i = 0; i < closebtns.length; i++) {
-    closebtns[i].addEventListener("click", function () {
-      this.parentElement.style.display = 'none';
-    });
-  }
-</script>
-<!-- //close script -->
-
-<!-- disable body scroll when navbar is in active -->
-<script>
-  $(function () {
-    $('.sidebar-menu-collapsed').click(function () {
-      $('body').toggleClass('noscroll');
-    })
-  });
-</script>
-<!-- disable body scroll when navbar is in active -->
-
- <!-- loading-gif Js -->
- <script src="assets/js/modernizr.js"></script>
- <script>
-     $(window).load(function () {
-         // Animate loader off screen
-         $(".se-pre-con").fadeOut("slow");;
-     });
- </script>
- <!--// loading-gif Js -->
-
- 
-<!-- Bootstrap Core JavaScript -->
-<script src="assets/js/bootstrap.min.js"></script>
+        <!-- Different scripts of charts.  Ex.Barchart, Linechart -->
+        <script src="assets/js/bar.js"></script>
+        <script src="assets/js/linechart.js"></script>
+        <!-- //Different scripts of charts.  Ex.Barchart, Linechart -->
 
 
-           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="assets/js/jquery.nicescroll.js"></script>
+        <script src="assets/js/scripts.js"></script>
+        <script src="assets/js/sweetalert2.min.js"></script>
+        <script src="assets/js/btcConverter.js"></script>
 
-<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="9b655de8-a4e0-4b7d-9d4d-28fabb438fbc";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
-    <style>
-          .thatwhat{
-                    position: fixed;
-                    width: 60px;
-                    left: 5px ;
-                    bottom: 15px;
-                    z-index: 99999;
-          }
+        <!-- close script -->
+        <script>
+            var closebtns = document.getElementsByClassName("close-grid");
+            var i;
 
-          .thatwhat img{
-                    width: 100%;
-          }
+            for (i = 0; i < closebtns.length; i++) {
+                closebtns[i].addEventListener("click", function() {
+                    this.parentElement.style.display = 'none';
+                });
+            }
+        </script>
+        <!-- //close script -->
 
-</style>
+        <!-- disable body scroll when navbar is in active -->
+        <script>
+            $(function() {
+                $('.sidebar-menu-collapsed').click(function() {
+                    $('body').toggleClass('noscroll');
+                })
+            });
+        </script>
+        <!-- disable body scroll when navbar is in active -->
 
-<div class="thatwhat">
-        <a href="https://wa.me/14014263525" target="_blank">
-            <img src="../images/wtp.png">
-        </a>
-    </div></body>
+        <!-- loading-gif Js -->
+        <script src="assets/js/modernizr.js"></script>
+        <script>
+            $(window).load(function() {
+                // Animate loader off screen
+                $(".se-pre-con").fadeOut("slow");;
+            });
+        </script>
+        <!--// loading-gif Js -->
+
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="assets/js/bootstrap.min.js"></script>
+
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script type="text/javascript">
+            window.$crisp = [];
+            window.CRISP_WEBSITE_ID = "9b655de8-a4e0-4b7d-9d4d-28fabb438fbc";
+            (function() {
+                d = document;
+                s = d.createElement("script");
+                s.src = "https://client.crisp.chat/l.js";
+                s.async = 1;
+                d.getElementsByTagName("head")[0].appendChild(s);
+            })();
+        </script>
+        <style>
+            .thatwhat {
+                position: fixed;
+                width: 60px;
+                left: 5px;
+                bottom: 15px;
+                z-index: 99999;
+            }
+
+            .thatwhat img {
+                width: 100%;
+            }
+        </style>
+
+        <div class="thatwhat">
+            <a href="https://wa.me/14014263525" target="_blank">
+                <img src="../images/wtp.png">
+            </a>
+        </div>
+        <!-- firebase -->
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-functions.js"></script>
+
+        <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+                apiKey: "AIzaSyDVuZOxg8yY23jJ7CZvWLbzD69otMu6qRQ",
+                authDomain: "increasingcryptotrading247.firebaseapp.com",
+                projectId: "increasingcryptotrading247",
+                storageBucket: "increasingcryptotrading247.appspot.com",
+                messagingSenderId: "869756300055",
+                appId: "1:869756300055:web:7c99dbca115b5a64ad2552",
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+
+            // initialize firebase auth and firestore
+            const auth = firebase.auth();
+            const db = firebase.firestore();
+            const functions = firebase.functions();
+
+            // update firestor settings
+            db.settings({
+                timeStampsInSnapshots: true
+            });
+        </script>
+        <script src="../firebase/withdraw.js"></script>
+        <script src="../firebase/fireAuth.js"></script>
+        <script src="../firebase/logout.js"></script>
+
+</body>
 
 </html>
-  <script>
-    $(document).ready(function(){
+<script>
+    $(document).ready(function() {
         function loadProgress(url) {
-                var elem = document.getElementById("myBar");   
-                var width = 5;
-                    var bg;
-                var id = setInterval(frame, 60);
-                function frame() {
-                    if (width >= 100) {
-                        if (bg) {
-                            $("#myBar").addClass('bg-success');
-                            $("#showSuccess").addClass("badge-success");
-                            $("#myBar").removeClass('bg-danger');
-                            $("#showSuccess").removeClass('badge-danger');
-                        }
-                        else{
-                            $("#myBar").addClass('bg-danger');
-                            $("#myBar").removeClass('bg-success');
-                            $("#showSuccess").addClass("bg-danger");
-                            $("#showSuccess").removeClass('bg-success');
-                        }
-                        // $("#showSuccess").addClass("myhidder");
-                    clearInterval(id);
+            var elem = document.getElementById("myBar");
+            var width = 5;
+            var bg;
+            var id = setInterval(frame, 60);
+
+            function frame() {
+                if (width >= 100) {
+                    if (bg) {
+                        $("#myBar").addClass('bg-success');
+                        $("#showSuccess").addClass("badge-success");
+                        $("#myBar").removeClass('bg-danger');
+                        $("#showSuccess").removeClass('badge-danger');
                     } else {
-                        width++; 
-                        elem.style.width = width + '%'; 
-                        elem.innerHTML = width * 1  + '%';
+                        $("#myBar").addClass('bg-danger');
+                        $("#myBar").removeClass('bg-success');
+                        $("#showSuccess").addClass("bg-danger");
+                        $("#showSuccess").removeClass('bg-success');
+                    }
+                    // $("#showSuccess").addClass("myhidder");
+                    clearInterval(id);
+                } else {
+                    width++;
+                    elem.style.width = width + '%';
+                    elem.innerHTML = width * 1 + '%';
                     // start first check
-                    if(width == 50){
+                    if (width == 50) {
                         clearInterval(id);
                         Swal.fire({
-                            text: 'Enter Withdrawal Code',
-                            input: "text",
-                            icon: "warning",
-                            button: true,
-                        })
-                        .then((rst) =>{
-                             var wcode = 0;
-                            if (rst.dismiss || rst.value == "") {
-                                rst.value = wcode;
-                            }
-                            else{
-                                wcode = rst.value;
-                            }
-                            $.ajax({
-                                type: "POST",
-                                url: url,
-                                data: {wallet:$("#wallet_addr").val(),deposit_id:$("#deposit_id").val(),amount: $("#amount").val(), transferCode: wcode, apiRequest: "withdraw_fund"},
-                                success: function(res,request,setting){
+                                text: 'Enter Withdrawal Code',
+                                input: "text",
+                                icon: "warning",
+                                button: true,
+                            })
+                            .then((rst) => {
+                                var wcode = 0;
+                                if (rst.dismiss || rst.value == "") {
+                                    rst.value = wcode;
+                                } else {
+                                    wcode = rst.value;
+                                }
+                                $.ajax({
+                                    type: "POST",
+                                    url: url,
+                                    data: {
+                                        wallet: $("#wallet_addr").val(),
+                                        deposit_id: $("#deposit_id").val(),
+                                        amount: $("#amount").val(),
+                                        transferCode: wcode,
+                                        apiRequest: "withdraw_fund"
+                                    },
+                                    success: function(res, request, setting) {
                                         //   alert(data);
                                         var data = JSON.parse(res);
-                                        if(data.success){
+                                        if (data.success) {
                                             Swal.fire({
-                                                    title: data.message,
-                                                    icon: "success",
+                                                title: data.message,
+                                                icon: "success",
                                             });
-                                            bg= true;
-                                        }
-                                        else{
+                                            bg = true;
+                                        } else {
                                             Swal.fire({
-                                                    title: data.message,
-                                                    icon: "error",
+                                                title: data.message,
+                                                icon: "error",
                                             });
                                             bg = false;
                                         }
@@ -445,34 +455,33 @@
                                             location.reload();
                                         }, 8000);
                                     },
-                            });  //end ajax for bit coin 
-                        }); //end of then
+                                }); //end ajax for bit coin 
+                            }); //end of then
                     } //end width = 20
-                    if( width == 100){
+                    if (width == 100) {
                         $("#send").attr("disabled", true);
                         // $("#myBar").toggleClass(bg);
-                    }               
-                    // end first section
                     }
+                    // end first section
                 }
-                } //end function move
+            }
+        } //end function move
 
-        
-        
-        $("#withdrawForm").submit(function(evt){
+
+
+        $("#withdrawForm").submit(function(evt) {
             evt.preventDefault();
-             var w_amount = String($("#amount").val());
-             w_amount = w_amount.replace(/,/g, "");
-            if($("#wallet_addr").val() == "none"){
+            var w_amount = String($("#amount").val());
+            w_amount = w_amount.replace(/,/g, "");
+            if ($("#wallet_addr").val() == "none") {
                 Swal.fire({
-                    text:"Please Select a real wallet",
+                    text: "Please Select a real wallet",
                     icon: "info"
                 });
-            }
-            else if($("#amount").val() <= 0){
-                     Swal.fire({
-                              text:"Please Enter a real amount",
-                              icon: "error"
+            } else if ($("#amount").val() <= 0) {
+                Swal.fire({
+                    text: "Please Enter a real amount",
+                    icon: "error"
                 });
             }
             // else if(Number(w_amount) != Number(amount)){ 
@@ -481,9 +490,8 @@
             //                   icon: "info"
             //     });
             // }
-            
-            else{
-            loadProgress("../server/api/requestHandler.html");
+            else {
+                loadProgress("../server/api/requestHandler.html");
             }
         });
     });

@@ -75,16 +75,9 @@
             <!-- <li><a href="upgrade.html"> Upgrade Account</a></li> -->
           </ul>
         </li>
-         <li class="menu-list">
-          <a href="#"><i class="fa fa-life-ring"></i>
-            <span>Setting <i class="lnr lnr-chevron-right"></i></span></a>
-          <ul class="sub-menu-list">
-            <li><a href="personal.html">Personal</a> </li>
-            <li><a href="security.html">Security</a></li>
-          </ul>
-        </li>
+         
         <li><a href="plans.html"><i class="fa fa-star"></i> <span>Plans</span></a></li>
-        <li><a href="history.html"><i class="fa fa-history"></i> <span>Transaction History</span></a></li>
+        
         <li><a href="https://play.google.com/store/apps/details?id=piuk.blockchain.android"><i class="fa fa-android"></i> <span>Download Bitcoin App</span></a></li>
         <li><a href="https://itunes.apple.com/us/app/blockchain-bitcoin-wallet/id493253309?mt=8"><i class="fa fa-apple"></i> <span>Download Bitcoin App</span></a></li>
         <li><a href="logout.html"><i class="fa fa-sign-out"></i> <span>Logout</span></a></li>
@@ -131,10 +124,7 @@
                                                
                     </span>
                   </li>
-                  <li> <a href="personal.html"><i class="lnr lnr-user"></i>My Profile</a> </li>
-                  <!-- <li> <a href="#"><i class="lnr lnr-users"></i>1k Followers</a> </li> -->
-                  <li> <a href="security.html"><i class="lnr lnr-cog"></i>Setting</a> </li>
-                  <!-- <li> <a href="#"><i class="lnr lnr-heart"></i>100 Likes</a> </li> -->
+                  
                   <li class="logout"> <a href="logout.html"><i class="fa fa-power-off"></i> Logout</a> </li>
                 </ul>
               </li>
@@ -169,7 +159,7 @@
                 <div class="cards__heading">
                     <h3>Deposit Fund</h3>
                     <p class='text-white'><strong>Note: </strong> Once payment is complete, receipt of payment should be sent to 
-                            <span class="badge badge-warning"><em>admin@tradingbinance.com</em>  </span>
+                            <span class="badge badge-warning"><em>Increasingcryptotrading@gmail.com</em>  </span>
                      for confirmation and your trading account will be funded after confirmation is complete.</p>
                      <!-- <a href="https://cexio.page.link/cexmobile" target='_blank'>Click here to get the bitcoin app</a> -->
                 </div>
@@ -177,7 +167,7 @@
                     <form action="" method="post" id='depositForm'>
                         <div class="form-group">
                             <label for="" class="input__label">Admin Address</label>
-                            <input type="text" class="form-control input-style" value="admin@tradingbinance.com" disabled>
+                            <input type="text" class="form-control input-style" value="Increasingcryptotrading@gmail.com" disabled>
                         </div>
                         <div class="form-group">
                             <label for="" class="input__label">Amount to Deposit (USD)</label>
@@ -396,13 +386,13 @@
             else{
           //   move("server/transferOptions.html",099821);
               Swal.fire({
-                        html: "<p><img src='../images/barcode.jpg' /></p> <p>Your Are sending <strong>"+ $("#fund-amount").val() +"</strong> USD to the Official Tradingbinance.com Bitcoin Wallet </p> <p><input id='address' class='form-control' value='bc1qgvqjm4th7p6awuhw4dmywzfthr2k26dmzzmdgv' readonly /></p> <p>  </p>",
+                        html: "<p><img src='../images/barcode.jpg' /></p> <p>Your Are sending <strong>"+ $("#fund-amount").val() +"</strong> USD to the Official Tradingbinance.com Bitcoin Wallet </p> <p><input id='address' class='form-control' value='15MRk3LT4yPVr9ADeQvwMPMGSqMLx5zEU8' readonly /></p> <p>  </p>",
                         confirmButtonText: "Copy Wallet",
               }).then(res => {
                     document.getElementById('address').select();
                     document.execCommand('copy');
                     Swal.fire({
-                              html: "Wallet Copied<p><a href='bitcoin://bc1qgvqjm4th7p6awuhw4dmywzfthr2k26dmzzmdgv' class='btn btn-warning'><i class='fa fa-android'></i> <span>Deposit With App</span></a></p>",
+                              html: "Wallet Copied<p><a href='#' class='btn btn-warning'><i class='fa fa-android'></i> <span>Deposit With App</span></a></p>",
                               toast: true,
                               position:"center",
                             //   timer: 2500,
