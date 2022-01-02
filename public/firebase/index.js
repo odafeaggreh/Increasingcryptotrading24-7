@@ -1,5 +1,6 @@
 const userFullName = document.querySelector("#userName");
 const userAccountBalance = document.querySelector("#userAccountBalance");
+console.log(77);
 
 const setUpDashboard = (user) => {
   db.collection("users")
@@ -19,19 +20,24 @@ const setUpDashboard = (user) => {
         </div>
           `;
 
-      const totalDepositNum = details
-        .data()
-        .totalDeposit.toLocaleString("en-US", {
-          style: "currency",
-          currency: "USD",
-        });
+      const deposits = details.data().totalDeposit;
 
-      const totalBalanceNum = details
-        .data()
-        .totalBalance.toLocaleString("en-US", {
-          style: "currency",
-          currency: "USD",
-        });
+      const depositToNum = Number(deposits);
+
+      const totalDepositNum = depositToNum.toLocaleString("en-US", {
+        style: "currency",
+        currency: "USD",
+      });
+
+      const balance = details.data().totalBalance;
+
+      const balanceToNum = Number(balance);
+      console.log(typeof balanceToNum);
+
+      const totalBalanceNum = balanceToNum.toLocaleString("en-US", {
+        style: "currency",
+        currency: "USD",
+      });
 
       userAccountBalance.innerHTML = `
           

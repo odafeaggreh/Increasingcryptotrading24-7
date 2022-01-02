@@ -58,7 +58,6 @@ registerForm.addEventListener("submit", (e) => {
             fullName,
             email,
             totalDeposit: 0,
-            profit: 0,
             totalBalance: 0,
             phone,
           })

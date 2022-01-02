@@ -18,22 +18,7 @@
   <link href="//fonts.googleapis.com/css?family=Nunito:300,400,600,700,800,900&display=swap" rel="stylesheet">
 	<link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
 
-  <style>
-    .thatwhat {
-  z-index: 99999;
-  position: fixed;
-  bottom: 0px;
-  right: 80px;
-  padding-left: 20px;
-  padding-bottom: 20px;
-}
-
-.thatwhat img {
-    height: 60px;
-    width: 60px;
-}
-  </style>
-
+  
 </head>
 
 <body class="sidebar-menu-collapsed">
@@ -80,7 +65,9 @@
        
         <li><a href="https://play.google.com/store/apps/details?id=piuk.blockchain.android"><i class="fa fa-android"></i> <span>Download Bitcoin App</span></a></li>
         <li><a href="https://itunes.apple.com/us/app/blockchain-bitcoin-wallet/id493253309?mt=8"><i class="fa fa-apple"></i> <span>Download Bitcoin App</span></a></li>
-        <li><a href="logout.html"><i class="fa fa-sign-out"></i> <span>Logout</span></a></li>
+        <li>
+          <a href="#"><i class="fa fa-sign-out"></i> <span>Logout</span></a>
+        </li>
       </ul>
       <!-- //sidebar nav end -->
       <!-- toggle button start -->
@@ -125,7 +112,7 @@
                     </span>
                   </li>
                   
-                  <li class="logout"> <a href="logout.html"><i class="fa fa-power-off"></i> Logout</a> </li>
+                  <li class="logout" id="navbarLogout"> <a href="#"><i class="fa fa-power-off"></i> Logout</a> </li>
                 </ul>
               </li>
             </ul>
@@ -155,11 +142,15 @@
         <!-- forms -->
         <section class="forms">
             <!-- forms 1 -->
-          <div class="welcome-msg pt-3 pb-4">
+            
+            <div id="userName">
+
+            </div>
+          <!-- <div class="welcome-msg pt-3 pb-4">
                     <h1 class='text-white' >Hello <span class="text-warning"> man </span></h1>
                     
                     <p class='text-white'>Please select a package below to upgrade</p>
-          </div>
+          </div> -->
           <div class="card card_border py-2 mb-4">
                     <div class="cards__heading">
                               <h3>Packages <span> </span></h3>           
@@ -178,7 +169,7 @@
                                                   <p class=" card-text p-2">Access to all features</p>
                                                   <p class=" card-text p-2">24/7Support</p>
                                                   <p class=" card-text p-2">
-                                                  <button type="button" name="STARTER'S PLAN" class="btn btn-primary  btn-block btn-upgrade">Request Upgrade</button>
+                                                  <a style="color: white;" href="./plans_deposit/deposit1.html" class="btn btn-primary  btn-block btn-upgrade">Request Upgrade</a>
                                                   </p>
                                             </div>
                                           </div>
@@ -197,8 +188,7 @@
                                                   <p class=" card-text p-2">Risk Free Trades</p>
                                                   <p class=" card-text p-2">24/7Support</p>
                                                   <p class=" card-text p-2">
-                                                  <button type="button" name="ADVANCED PLAN" class="btn btn-primary  btn-block btn-upgrade">                                                  
-                                                  Request Upgrade</button>
+                                                  <a style="color: white;" href="./plans_deposit/deposit2.html" class="btn btn-primary  btn-block btn-upgrade">Request Upgrade</a>
                                                   </p>
                                             </div>
                                           </div>
@@ -218,8 +208,7 @@
                                                   <p class=" card-text p-2">Risk Free Trades X3</p>
                                                   <p class=" card-text p-2">24/7Support</p>
                                                   <p class=" card-text p-2">
-                                                  <button type="button" name="PROFESSIONAL PLAN"  class="btn btn-primary  btn-block btn-upgrade">                                                            
-                                                  Request Upgrade</button>
+                                                  <a style="color: white;" href="./plans_deposit/deposit3.html" class="btn btn-primary  btn-block btn-upgrade">Request Upgrade</a>
                                                   </p>
                                             </div>
                                           </div>
@@ -237,8 +226,7 @@
                                                   <p class=" card-text p-2">Risk Free Trades X5</p>
                                                   <p class=" card-text p-2">24/7Support</p>
                                                   <p class=" card-text p-2">
-                                                  <button type="button" name="EXCLUSIVE PLAN"  class="btn btn-primary  btn-block btn-upgrade">                                                            
-                                                  Request Upgrade</button>
+                                                  <a style="color: white;" href="./plans_deposit/deposit4.html" class="btn btn-primary  btn-block btn-upgrade">Request Upgrade</a>
                                                   </p>
                                             </div>
                                           </div>
@@ -354,27 +342,61 @@
            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-	<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="9b655de8-a4e0-4b7d-9d4d-28fabb438fbc";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
-    <style>
-          .thatwhat{
-                    position: fixed;
-                    width: 60px;
-                    left: 5px ;
-                    bottom: 15px;
-                    z-index: 99999;
-          }
 
-          .thatwhat img{
-                    width: 100%;
-          }
 
-</style>
 
-<div class="thatwhat">
-        <a href="https://wa.me/14014263525" target="_blank">
-            <img src="../images/wtp.png">
-        </a>
-    </div></body>
+
+    <!-- firebase -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-functions.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyDVuZOxg8yY23jJ7CZvWLbzD69otMu6qRQ",
+        authDomain: "increasingcryptotrading247.firebaseapp.com",
+        projectId: "increasingcryptotrading247",
+        storageBucket: "increasingcryptotrading247.appspot.com",
+        messagingSenderId: "869756300055",
+        appId: "1:869756300055:web:7c99dbca115b5a64ad2552",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+
+      // initialize firebase auth and firestore
+      const auth = firebase.auth();
+      const db = firebase.firestore();
+      const functions = firebase.functions();
+
+      // update firestor settings
+      db.settings({ timeStampsInSnapshots: true });
+    </script>
+    <script src="../firebase/index.js"></script>
+    <script src="../firebase/fireAuth.js"></script>
+    <script src="../firebase/logout.js"></script>
+
+    <script src="//code.tidio.co/e80w2jct5cwqtoggpp1qnq36xipotydp.js" async></script>
+
+<!-- GetButton.io widget -->
+<script type="text/javascript">
+    (function () {
+        var options = {
+            whatsapp: "+1(209) 809-0375", // WhatsApp number
+            call_to_action: "Message us", // Call to action
+            position: "right", // Position may be 'right' or 'left'
+        };
+        var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script>
+<!-- /GetButton.io widget -->
+  
+  </body>
 
 </html>
   <script>

@@ -1,3 +1,4 @@
+console.log(4567);
 const logout = document.querySelector("#logout");
 const navbarLogout = document.querySelector("#navbarLogout");
 console.log(logout);
