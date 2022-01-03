@@ -42,7 +42,7 @@ const setUpDashboard = (user) => {
       userAccountBalance.innerHTML = `
           
 
-        <div class="statistics hide-md">
+        <div class="statistics">
         <div class="row">
           <div class="col-xl-6 pr-xl-2">
             <div class="row">
